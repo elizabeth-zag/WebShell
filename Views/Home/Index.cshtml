@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebApplication2.Models.Request>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Web Shell</h1>
+
+<h2 class="header window-header">История ваших запросов:</h2>
+<div id="window">
+    @foreach (var s in Model)
+    {
+        <ul id="list">
+            <li>@s.Text</li>
+        </ul>
+
+    }
+
+</div>
+
+<form id="form">
+    <h2 class="header input-header">Введите ваш запрос:</h2>
+    <input type="text" id="input-text" name="Request" />
+    <input type="submit" id="submit" value="Send" />
+</form>
+
+<div>
+    <h2 class="header result-header">Результат:</h2>
+    <p id="results"></p>
+</div>
+
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#form').submit(function (e) {
+                e.preventDefault();
+                var text = $('#input-text').val();
+                text = encodeURIComponent(text);
+                $.ajax({
+                    url: '/Home/Take',
+                    type: 'POST',
+                    async: true,
+                    data: { Text: text },
+                    success: function (result) {
+                        $('#results').html(result);
+                    }
+                });
+            });
+        });
+    </script>
+}
