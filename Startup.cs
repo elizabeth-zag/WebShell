@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebShell.Models;
+using WebShell.Repositories;
+using WebShell.Services;
 
 namespace WebShell
 {
@@ -28,6 +30,8 @@ namespace WebShell
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<RequestContext>(options => options.UseSqlServer(connection));
             services.AddControllersWithViews();
+            services.AddTransient<RequestRepository>();
+            services.AddTransient<ProcessingService>();
         }
 
         public void Configure(IApplicationBuilder app)

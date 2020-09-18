@@ -9,7 +9,6 @@ C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\WebShell.T
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\WebShell.TagHelpers.output.cache
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\WebShell.RazorCoreGenerate.cache
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\Razor\Views\Home\Take.cshtml.g.cs
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -74,3 +73,4 @@ C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\WebShell.c
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\staticwebassets\WebShell.StaticWebAssets.Manifest.cache
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\staticwebassets\WebShell.StaticWebAssets.xml
 C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\WebShell.genruntimeconfig.cache
+C:\Users\Elizabeth\Desktop\git_repos\WebShell\obj\Debug\netcoreapp3.1\Razor\Views\Home\ProcessRequest.cshtml.g.cs

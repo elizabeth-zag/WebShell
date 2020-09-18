@@ -20,7 +20,7 @@
 
 <form id="form">
     <h2 class="header input-header">Введите ваш запрос:</h2>
-    <input type="text" id="input-text" name="Request" />
+    <input type="text" id="input-text" />
     <input type="submit" id="submit" value="Send" />
 </form>
 
@@ -38,7 +38,7 @@
                 var text = $('#input-text').val();
                 text = encodeURIComponent(text);
                 $.ajax({
-                    url: '/Home/Take',
+                    url: '/Home/ProcessRequest',
                     type: 'POST',
                     async: true,
                     data: { Text: text },
